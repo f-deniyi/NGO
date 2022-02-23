@@ -15,13 +15,13 @@ const HomeNavbar = () => {
         <h1 className="text-3xl">PAF</h1>
         <div className="md:flex gap-2 mb-0 items-center hidden ">
           <button
-            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#967969] text-white"
+            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#CC5500] text-white"
             onClick={() => navigate("/auth/login")}
           >
             Signin
           </button>
           <button
-            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#967969] text-white"
+            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#CC5500] text-white"
             onClick={() => navigate("/auth/register")}
           >
             Signup
@@ -29,13 +29,13 @@ const HomeNavbar = () => {
         </div>
         <div className="md:hidden block">
         {!toggleSidebar && <HiMenu
-            className="text-[#967969] font-bold"
+            className="text-[#CC5500] font-bold"
             fontSize={"40px"}
             onClick={() => setToggleSidebar(!toggleSidebar)}
           />
         }
          {toggleSidebar && <FaTimes
-            className="text-[#967969] font-bold"
+            className="text-[#CC5500] font-bold"
             fontSize={"40px"}
             onClick={() => setToggleSidebar(!toggleSidebar)}
           />

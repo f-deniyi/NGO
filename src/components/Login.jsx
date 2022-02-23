@@ -40,7 +40,7 @@ const Register = () => {
               placeholder="Password"
               type="password"
             />
-            <button className="p-3 mb-4 rounded-md mx-auto w-4/5 bg-[#967969] text-white"
+            <button className="p-3 mb-4 rounded-md mx-auto w-4/5 bg-[#CC5500] text-white"
               onClick={() => navigate("/app/overview")}
             >
               Signin
@@ -56,7 +56,7 @@ const Register = () => {
           <p className=" py-4 px-10 text-center shadow-sm w-full md:w-4/5 bg-white rounded-md mt-5">
             New user?
             <span
-              className="text-[#967969] font-bold cursor-pointer"
+              className="text-[#CC5500] font-bold cursor-pointer"
               onClick={() => navigate("/auth/register")}
             >
               {" "}

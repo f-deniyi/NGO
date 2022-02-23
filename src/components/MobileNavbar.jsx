@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const MobileNavbar = () => {
   const isNotActiveStyle = "mb-0 ";
-  const isActiveStyle = "text-[#967969] font-bold mb-0 ";
+  const isActiveStyle = "text-[#CC5500] font-bold mb-0 ";
   return (
     <div className="block md:hidden  fixed bottom-0 w-full flex gap-2 mb-0 items-center bg-white border-t-2 border-slate-200 shadow-md justify-between py-4 px-5">
       <NavLink

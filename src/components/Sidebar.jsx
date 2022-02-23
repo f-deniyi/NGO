@@ -7,7 +7,7 @@ const Sidebar = ({ user, closeToggle }) => {
   const isNotActiveStyle =
     "flex items-center px-5 gap-3 my-2 py-2 text-gray-500 hover:text transition-all duration-200 ease-in-out capitalize";
   const isActiveStyle =
-    "flex items-center px-5 gap-3 my-2 py-2 rounded-md text-[#f8f8f8] font-extrabold  border-right-3 border-2 bg-[#967969] mr-2 transition-all duration-200 ease-in-out capitalize";
+    "flex items-center px-5 gap-3 my-2 py-2 rounded-md text-[#f8f8f8] font-extrabold  border-right-3 border-2 bg-[#CC5500] mr-2 transition-all duration-200 ease-in-out capitalize";
 
   const handleCloseSidebar = () => {
     if (closeToggle !== undefined) {

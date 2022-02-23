@@ -31,7 +31,7 @@ const Home = () => {
 
                         >Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.Social hen.</p>
                         <button
-                            className="py-3 mb-0 btn-lg rounded-md mx-auto mb-3 px-9 bg-[#967969] text-white"
+                            className="py-3 mb-0 btn-lg rounded-md mx-auto mb-3 px-9 bg-[#CC5500] text-white"
                             onClick={() => navigate("/auth/register")}
                         >
                             Get Started
@@ -44,11 +44,11 @@ const Home = () => {
 
             </div>
 
-            <div className=' mt-4 bg-[#f8f8f8] px-5 py-10 md:px-20 z-20 '>
+            <div className=' mt-4 bg-[#f7f7f7] px-5 py-10 md:px-20 z-20 '>
                 {/* <p className='text-sm text-center '>What we do</p> */}
                 <div className='flex flex-col md:flex-row gap-7 mb-10 '>
                     <div className='w-full md:w-1/2'>
-                        <h1 className='text-3xl font-bold mb-2 text-[#967969] '>Meet Great People Online</h1>
+                        <h1 className='text-3xl font-bold mb-2 text-[#CC5500] '>Meet Great People Online</h1>
                         <p className='tracking-wide'>
                             Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.
                         </p>
@@ -58,11 +58,11 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row gap-7 mb-10 '>
-                    <div className='w-full md:w-1/2 bg-white p-5 rounded-md text-[#967969] shadow-md '>
+                    <div className='w-full md:w-1/2 bg-white p-5 rounded-md text-[#CC5500] shadow-md '>
                         <img src={great} alt='connect-img' className=' rounded-md ' />
                     </div>
                     <div className='w-full md:w-1/2 order-first md:order-last'>
-                        <h1 className='text-3xl font-bold mb-2 text-[#967969] '>Find People Near You</h1>
+                        <h1 className='text-3xl font-bold mb-2 text-[#CC5500] '>Find People Near You</h1>
                         <p className='tracking-wide'>
                             Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.
                         </p>
@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
                 <div className='flex flex-col md:flex-row gap-7 mb-10 '>
                     <div className='w-full md:w-1/2'>
-                        <h1 className='text-3xl font-bold mb-2 text-[#967969] '>Buy and Sell with ease</h1>
+                        <h1 className='text-3xl font-bold mb-2 text-[#CC5500] '>Buy and Sell with ease</h1>
                         <p className='tracking-wide'>
                             Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.Social hen an unknown printer took a galley of type and scrambled make type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentialunchanged they popularised with release.
                         </p>
@@ -84,7 +84,7 @@ const Home = () => {
                             controls={false}
                             muted
                             autoPlay
-                            className="bg-[#f8f8f8] p-1 rounded-md"
+                            className="bg-[#f7f7f7] p-1 rounded-md"
                         />
                     </div>
                 </div>

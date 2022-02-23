@@ -45,7 +45,7 @@ const Login = () => {
               placeholder="Confirm Password"
               type="password"
             />
-            <button className="p-3 mb-4 rounded-md mx-auto w-4/5 bg-[#967969] text-white">
+            <button className="p-3 mb-4 rounded-md mx-auto w-4/5 bg-[#CC5500] text-white">
               Signup
             </button>
             <p className="py-1 text-slate-600">or</p>
@@ -59,7 +59,7 @@ const Login = () => {
           <p className=" py-4 px-10 text-center shadow-sm w-full md:w-4/5 bg-white rounded-md mt-5">
             Already a member?
             <span
-              className="text-[#967969] text-[#967969] font-bold cursor-pointer"
+              className="text-[#CC5500] text-[#CC5500] font-bold cursor-pointer"
               onClick={() => navigate("/auth/login")}
             >
               {" "}
