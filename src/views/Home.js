@@ -17,7 +17,7 @@ const Home = () => {
         <div className='hide-scrollbar'>
             <HomeNavbar />
             <div className='px-5 md:px-20 pt-20 mb-8 md:mb-2 '>
-                <div className='flex flex-col lg:flex-row justify-center items-center h-screen md:mt-2 mt-5 md:h-85vh md:overflow-y-hidden gap-2'>
+                <div className='flex flex-col lg:flex-row justify-center items-center  md:mt-2 mt-5 md:h-85vh md:overflow-y-hidden gap-2'>
                     <div className='w-full lg:w-2/5'>
                         <h1 className='text-3xl text-center md:text-left md:text-5xl font-extrabold mb-2'
 
