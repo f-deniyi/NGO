@@ -22,7 +22,7 @@ const Home = () => {
                         <h1 className='text-3xl text-center md:text-left md:text-6xl font-extrabold mb-2'
 
                         >
-                            Turn User Content
+                            PAF SOCIAL SITE
                         </h1>
                         <p className='mb-3 tracking-wide text-stone-700'
                             style={{
