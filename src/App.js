@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import ProtectedRoutes from './utils/protectedRoute';
 import { Login,Register } from './components';
 import Home from './views/Home';
-import {Dashboard,Pages,Groups,Course,Post, Event,Store} from './views/App'
+import {Dashboard,Pages,Groups,Course,Post, Event,Store,Cart,Messages,Notifications,Search} from './views/App'
 
 
 
@@ -27,8 +27,10 @@ const App = () => {
         <Route exact path='/app/blog' element={<Post />} />
         <Route exact path='/app/store' element={<Store/>} />
         <Route exact path='/app/events' element={<Event />} />
-
-
+        <Route exact path='/app/cart' element={<Cart />} />
+        <Route exact path='/app/messages' element={<Messages />} />
+        <Route exact path='/app/notifications' element={<Notifications />} />
+        <Route exact path='/app/search' element={<Search />} />
       </Route>
     </Routes>
   );
