@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin:0;
+    padding:0;
+    /* font-family:'Lato', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+    display:none;
+}
+
+.auth-bg_image{
+    background-image:linear-gradient(0deg, rgba(119, 119, 119, 0.61), rgba(94, 94, 94, 0.425)) , url('./assets/PAF.JPG')!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-login:before,.social-login:after {
+      background-color: rgba(119, 119, 119, 0.61);
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+}
+
+.social-login::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  .social-login::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
