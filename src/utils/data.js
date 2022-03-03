@@ -5,47 +5,54 @@ import {FaUserFriends,FaBlog} from 'react-icons/fa'
 
 export const sidebarMenu = [
     {
-      name: 'News Feed',
-      icon: <MdFeed fontSize='25px'/>,
-      link:'/overview'
+      name: 'Home',
+      icon: <MdFeed fontSize='25px' className='nav-item-icon'/>,
+      link:'/#home'
     },
     {
-      name: 'Pages',
-      icon: <RiPagesLine fontSize='25px'/>,
-      link:'/page'
+      name: 'Fashion',
+      icon: <RiPagesLine fontSize='25px' className='nav-item-icon'/>,
+      link:'/#fashion'
 
     },
     {
       name: 'Groups',
-      icon: <FaUserFriends fontSize='25px'/>,
-      link:'/friends'
+      icon: <FaUserFriends fontSize='25px' className='nav-item-icon'/>,
+      link:'/'
 
     },
     {
       name: 'Course',
-      icon: <SiCoursera fontSize='25px'/>,
-      link:'/course'
+      icon: <SiCoursera fontSize='25px' className='nav-item-icon'/>,
+      link:'/'
 
     },
 
     {
-      name: 'Blog Posts',
-      icon: <FaBlog fontSize='25px'/>,
-      link:'/blog'
+      name: 'Blog',
+      icon: <FaBlog fontSize='25px' className='nav-item-icon'/>,
+      link:'/'
 
     },
     {
-      name: 'Market Place',
-      icon: <MdLocalGroceryStore fontSize='25px'/>,
-      link:'/store'
+      name: 'Market',
+      icon: <MdLocalGroceryStore fontSize='25px' className='nav-item-icon'/>,
+      link:'/'
 
     },
     {
       name: 'Events',
-      icon: <MdEventNote fontSize='25px'/>,
-      link:'/events'
+      icon: <MdEventNote fontSize='25px' className='nav-item-icon'/>,
+      link:'/'
 
     },
+    {
+      name: 'Blog',
+      icon: <FaBlog fontSize='25px' className='nav-item-icon'/>,
+      link:'/'
+
+    }
+   
     
     
   ];

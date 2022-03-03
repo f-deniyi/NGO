@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
-import { Sidebar, Navbar, MobileNavbar } from "../components";
+import { Sidebar, Navbar } from "../components";
+import Footer from "./Footer";
 
 
 const Layout = ({ children }) => {
@@ -13,14 +14,14 @@ const Layout = ({ children }) => {
         setToggleSidebar={setToggleSidebar}
       />
       <div className="flex bg-gray-50 md:flex-row flex-col transition-height duration-75 ease-out">
-        <div
+        {/* <div
           className="hidden md:block h-screen"
           style={{
             width: "250px",
           }}
         >
           <Sidebar closeToggle={setToggleSidebar} />
-        </div>
+        </div> */}
         <div className="flex md:hidden flex-row  ">
           {toggleSidebar && (
             <div className="fixed w-4/5  bg-white h-screen overflow-y-auto shadow-md z-10 animate-slide-in">
@@ -31,7 +32,7 @@ const Layout = ({ children }) => {
           )}
         </div>
         <div
-          className="pb-2 flex-1 h-full overflow-y-scroll px-5"
+          className="main-container  h-full overflow-y-scroll px-5 w-full  bg-[#f5f5f5] z-20"
           ref={scrollRef}
           onClick={()=>{
             setToggleSidebar(false)
@@ -40,7 +41,8 @@ const Layout = ({ children }) => {
           {children}
         </div>
       </div>
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
+      <Footer/>
     </div>
   );
 };

@@ -3,8 +3,12 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      padding: {
+        18: '18px'
+      },
       margin: {
         320: '320px',
+        15: "15px"
       },
       width: {
         190: '190px',
@@ -18,6 +22,9 @@ module.exports = {
       },
       height: {
         80: '80px',
+        50: '12.6rem',
+        75:'22em',
+        100:'26rem',
         340: '340px',
         370: '370px',
         420: '420px',
@@ -39,7 +46,7 @@ module.exports = {
         210: '210px',
         350: '350px',
         620: '620px',
-        120:'10px'
+        120: '10px'
       },
       textColor: {
         lightGray: '#F1EFEE',
@@ -92,5 +99,7 @@ module.exports = {
     // backgroundColor: ['active'],
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 };

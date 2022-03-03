@@ -15,13 +15,13 @@ const HomeNavbar = () => {
         <h1 className="text-3xl">PAF</h1>
         <div className="md:flex gap-2 mb-0 items-center hidden ">
           <button
-            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#CC5500] text-white"
+            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#CC5500] text-white text-white"
             onClick={() => navigate("/auth/login")}
           >
             Signin
           </button>
           <button
-            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#CC5500] text-white"
+            className="py-2 mb-0 btn-lg rounded-md mx-auto px-9 bg-[#CC5500] text-white text-white"
             onClick={() => navigate("/auth/register")}
           >
             Signup
