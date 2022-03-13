@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
           )}
         </div>
         <div
-          className="main-container  h-full overflow-y-scroll px-5 w-full  bg-[#f5f5f5] z-20"
+          className="main-container  h-full overflow-y-scroll  w-full  bg-[#f5f5f5] z-20"
           ref={scrollRef}
           onClick={()=>{
             setToggleSidebar(false)
