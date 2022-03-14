@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html{
     scroll-behavior: smooth;
 }
@@ -120,13 +121,18 @@ h5.carousel-caption-text{
   }
   
   ul li::before {
-    content: '✔️';
+    content: '➤';
     position: absolute;
     top: 6px;
     left: 0;
-    font-size: 12px;
+    font-size: 14px;
   }
-
+.about--hero{
+  background:linear-gradient(0deg,rgba(22, 22, 22, 0.712), rgba(31, 30, 30, 0.397)) ,url('./assets/3rd.JPG');
+  background-position: top, 10% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (max-width:800px) {
     .nav-link-item,.nav-item-icon{
 font-size: 10px;

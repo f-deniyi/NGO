@@ -2,15 +2,17 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        
-        <div className="mb-32 text-gray-800">
 
-            <div className="relative overflow-hidden bg-no-repeat bg-cover"
-                style={{ backgroundPosition: '50%', backgroundImage: "url('https://mdbootstrap.com/img/new/textures/full/284.jpg')", height: '300px' }}>
+        <div className="mb-10 text-gray-800">
+            <div className='about--hero h-[230px] md:h-[270px] relative'>
+                <div className='absolute bottom-[30%] left-[35%] md:bottom-[37%] md:left-[5%] mt-5'>
+                    <h3 className=' text-4xl text-white mx-auto text-[#f2f2f2]  text-center'>Contact</h3>
+                    <h5 className='text-[#f2f2f2]'>Home / <span className='text-[#fbb771]'>Contact Us</span></h5>
+                </div>
             </div>
             <div className="container text-gray-800 px-4 md:px-12">
-                <div className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6"
-                    style={{marginTop: "-100px", background: "hsla(0, 0%, 100%, 0.8)" ,backdropFilter: 'blur(30px)'}}>
+                <div className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6 z-50"
+                    style={{ marginTop: "-50px", background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
                     <div className="flex flex-wrap">
                         <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
                             <form>
@@ -67,7 +69,7 @@ const Contact = () => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
           " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                                 </div>
-                                
+
                                 <button type="submit" className="
           w-full
           px-6
