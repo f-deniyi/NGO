@@ -14,7 +14,6 @@ import icon3 from "../../assets/icon-3.png"
 
 
 const Home = () => {
-
   return (
     <>
       <div className='carousel_container relative'>
