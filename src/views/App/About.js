@@ -1,5 +1,7 @@
 import React from 'react'
 import mission from "../../assets/mission.jpeg";
+import guide from "../../assets/guide.jpeg";
+
 
 const About = () => {
   return (
@@ -43,7 +45,7 @@ const About = () => {
           <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
             <div class="relative overflow-hidden bg-no-repeat bg-cover ripple zoom shadow-lg rounded-lg "
               style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/new/standard/city/033.jpg" class="w-full h-[300px] " alt="Louvre" />
+              <img src={guide} class="w-full h-[300px] " alt="Louvre" />
               
             </div>
           </div>

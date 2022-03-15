@@ -10,7 +10,7 @@ const Contact = () => {
                     <h5 className='text-[#f2f2f2]'>Home / <span className='text-[#fbb771]'>Contact Us</span></h5>
                 </div>
             </div>
-            <div className="container text-gray-800 px-4 md:px-12">
+            <div className="container text-gray-800 px-4 md:px-12 z-50">
                 <div className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6 z-50"
                     style={{ marginTop: "-50px", background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
                     <div className="flex flex-wrap">
