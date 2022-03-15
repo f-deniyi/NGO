@@ -13,7 +13,6 @@ body{
     overflow-x: hidden;
     font-family: 'Hind', sans-serif;
     background-color: #fff !important;
-    z-index: unset;
 }
 input{
   outline: none !important;
@@ -136,6 +135,7 @@ h5.carousel-caption-text{
   background-position: top, 10% 35%;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: unset;
 }
 @media (max-width:800px) {
     .nav-link-item,.nav-item-icon{
