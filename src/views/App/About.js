@@ -35,7 +35,7 @@ const About = () => {
         </p>
 
       </div>
-      <section className='bg-[#f2f2f2] px-10 py-12 '>
+      <section className='bg-[#f2f2f2] px-5 md:px-10 py-12 '>
         <div class="flex flex-wrap mb-7">
           <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
             <div class="relative overflow-hidden bg-no-repeat bg-cover ripple  zoom hadow-lg rounded-lg"

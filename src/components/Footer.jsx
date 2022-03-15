@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 md:pb-5 pt-8 px-10 md:px-20 w-full">
+    <footer className="bg-slate-900 md:pb-5 pt-8 px-7 md:px-20 w-full">
       <div className="flex flex-col md:grid-cols-2 md:grid justify-between md:gap-[6em]">
         <div className="">
           {/* <h1 className="text-5xl text-slate-300 mb-1 self-start">PWH</h1> */}
