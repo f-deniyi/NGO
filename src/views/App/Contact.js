@@ -4,7 +4,7 @@ const Contact = () => {
     return (
 
         <div className="mb-10 text-gray-800">
-            <div className='about--hero h-[230px] md:h-[270px] relative z-0'>
+            <div className='about--hero h-[230px] md:h-[270px] relative'>
                 <div className='absolute bottom-[30%] left-[35%] md:bottom-[37%] md:left-[5%] mt-5'>
                     <h3 className=' text-4xl text-white mx-auto text-[#f2f2f2]  text-center'>Contact</h3>
                     <h5 className='text-[#f2f2f2]'>Home / <span className='text-[#fbb771]'>Contact Us</span></h5>
@@ -12,7 +12,7 @@ const Contact = () => {
             </div>
             <div className="container text-gray-800 px-4 md:px-12 z-50">
                 <div className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6 z-10"
-                    style={{ marginTop: "-50px", background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
+                    style={{zIndex:999, marginTop: "-50px", background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
                     <div className="flex flex-wrap">
                         <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
                             <form>
