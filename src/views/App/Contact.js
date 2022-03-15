@@ -10,9 +10,9 @@ const Contact = () => {
                     <h5 className='text-[#f2f2f2]'>Home / <span className='text-[#fbb771]'>Contact Us</span></h5>
                 </div>
             </div>
-            <div className="container text-gray-800 px-4 md:px-12 z-50">
-                <div className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6 z-10"
-                    style={{zIndex:999, marginTop: "-50px", background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
+            <div className="container text-gray-800 px-4 md:px-12 z-50 pt-[1.3em] md:pt-0]">
+                <div className="block mt-7px md:mt-[-50px] rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6 z-10"
+                    style={{zIndex:999,  background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
                     <div className="flex flex-wrap">
                         <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
                             <form>
