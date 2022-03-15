@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       {/* <MobileNavbar /> */}
-      <Footer/>
+      {!toggleSidebar&&<Footer/>}
     </div>
   );
 };
