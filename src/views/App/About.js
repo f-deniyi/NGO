@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import mission from "../../assets/mission.jpeg";
 import guide from "../../assets/guide.jpeg";
 
 
 const About = () => {
+
+
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  useEffect(() => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTop()
+    }
+  }, [])
   return (
 
     <div className="text-gray-800 bg-white">
@@ -13,8 +26,8 @@ const About = () => {
           <h5 className='text-[#f2f2f2] pl-[16px] md:pl-[0px]'>Home / <span className='text-[#fbb771]'>About Us</span></h5>
         </div>
       </div>
-      <div className='px-10 bg-white py-5 pb-7'>
-        <p class="my-3 tracking-wide">The
+      <div className='px-5 md:px-10 bg-white py-3 md:py-5 pb-4 md:pb-7'>
+        <p class="my-0 md:my-3 tracking-wide">The
           <span className='font-semibold'> PRIORITY FOR WOMEN HEALTH (PWH)</span> was founded in 2020. The consistent under-attention given to women's health and the inadequate information available on women's health worldwide prompt the need for a foundation that will help Women in their own little capacity. PWH was founded in an effort to address these shortcomings and to bring issues of women's health to the forefront of global policy. Through advocacy, education, and promotion, PWH will be making significant strides in the public and private arenas toward the advancement of women's health throughout the world.
         </p>
         <p class="tracking-wide">
@@ -28,13 +41,13 @@ const About = () => {
             <div class="relative overflow-hidden bg-no-repeat bg-cover ripple  zoom hadow-lg rounded-lg"
               style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="light">
               <img src={mission} class="w-full  h-[300px] " alt="Louvre" />
-              
+
             </div>
           </div>
 
           <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
             <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-            
+
             <p class="tracking-wide">
               The Priority for Women's Health (PWH) is committed to advancing women's health in all stages of life and at all policy levels through health promotion, education, advocacy, and program implementation. PWH both promotes and implements women's health care research and service improvements at local, national, and international levels by collaborating with governmental and non-governmental organizations (NGOs), the private sector, academics, and individual citizens from all regions of the world.
             </p>
@@ -46,19 +59,19 @@ const About = () => {
             <div class="relative overflow-hidden bg-no-repeat bg-cover ripple zoom shadow-lg rounded-lg "
               style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="light">
               <img src={guide} class="w-full h-[300px] " alt="Louvre" />
-              
+
             </div>
           </div>
 
           <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6">
             <h3 class="text-2xl font-bold mb-3">Our Guiding Principles</h3>
             <ul className='mb-2'>
-                    <li className='mb-2'>Women's health is a continuum from infancy through old age</li>
-                    <li className='mb-2'>All stages of this continuum have unique health care needs</li>
-                    <li className='mb-2'>Women's health care has been underserved and under-attended throughout the world</li>
-                    <li className='mb-2'>Long-term initiatives and commitments are needed in order to forge alliances and collaborative programs across the globe</li>
-                    <li className='mb-2'>Partnering among the public-private sector is necessary in order to provide effective health care and research for women worldwide</li>
-                  </ul>
+              <li className='mb-2'>Women's health is a continuum from infancy through old age</li>
+              <li className='mb-2'>All stages of this continuum have unique health care needs</li>
+              <li className='mb-2'>Women's health care has been underserved and under-attended throughout the world</li>
+              <li className='mb-2'>Long-term initiatives and commitments are needed in order to forge alliances and collaborative programs across the globe</li>
+              <li className='mb-2'>Partnering among the public-private sector is necessary in order to provide effective health care and research for women worldwide</li>
+            </ul>
           </div>
         </div>
 
@@ -66,7 +79,7 @@ const About = () => {
 
 
       </section>
-      <section class="text-gray-800 px-10 py-7">
+      <section class="text-gray-800 px-5 md:px-10 py-7">
         <div class="flex justify-center">
           <div class="">
             <h2 class="text-3xl font-bold mb-2 text-center">Overview</h2>

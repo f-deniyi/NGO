@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ closeToggle }) => {
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  useEffect(() => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTop()
+    }
+  }, [])
+
   return (
-    <div className='py-10'>
+    <div className='py-10 overflow-hidden'>
       <div className=" mb-0 text-center flex flex-col">
         <NavLink
           to={`/`}
