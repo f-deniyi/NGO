@@ -217,7 +217,7 @@ const Home = () => {
 
         </section>
 
-        <section class="mb-2 text-gray-800 bg-white px-10 py-5">
+        <section class="mb-2 text-gray-800 bg-white px-7 md:px-10 py-5">
           <h2 class="text-3xl font-bold mb-4 text-center">
             Gallery
           </h2>
