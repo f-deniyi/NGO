@@ -4,12 +4,20 @@ import { MdVolunteerActivism } from 'react-icons/md';
 import h1 from '../../assets/1st.JPG'
 import h2 from '../../assets/2nd.JPG'
 import h3 from "../../assets/3rd.JPG";
-// import p from "../../assets/project2.jpeg";
 import about from '../../assets/about.JPG';
-
 import icon1 from "../../assets/icon-1.png"
-// import icon2 from "../../assets/icon-2.png"
 import icon3 from "../../assets/icon-3.png"
+import g11 from '../../assets/g11.jpg';
+import g2 from '../../assets/2.JPG';
+import g3 from '../../assets/3.JPG';
+import g4 from '../../assets/4.JPG';
+import g5 from '../../assets/5.JPG';
+import g6 from '../../assets/6.JPG';
+import g7 from '../../assets/7.JPG';
+// import g8 from '../../assets/8.JPG';
+import g9 from '../../assets/9.JPG';
+import g10 from '../../assets/10.JPG';
+
 
 
 
@@ -177,7 +185,7 @@ const Home = () => {
         {/* Projects */}
 
         <section className=" text-gray-800  bg-[#f2f2f2] overflow-hidden py-8 pb-10" >
-          <h3 className='text-3xl text-center font-bold pb-5'>Project</h3>
+          <h3 className='text-3xl text-center font-bold pb-5'>Projects</h3>
           <div className="px-6  md:px-12 text-center lg:text-left">
             <div className="container mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 flex ">
@@ -189,6 +197,11 @@ const Home = () => {
                   <p className='tracking-wide'>
                     With the help of our partners from the public and private sectors, PWH has held well over 100 symposia on women's health concerns in most regions of the world. In addition, we have initiated campaigns and petitions, created donation programs and international women's health networks, as well as published and distributed numerous informative materials on women's health. Our efforts have contributed to the dissemination of valuable information and have effectively turned the spotlight on global women's health concerns. Moreover, our efforts have facilitated public-private collaborations that have led to advancements in women's healthcare policies worldwide.
                   </p>
+                  <div className='mt-3'>
+                  <NavLink to='/projects' className='py-2 px-3 mt-3 rounded-md bg-[#fbb771]'>
+                    {'Check more >>'}
+                  </NavLink>
+                  </div>
                 
                 </div>
                 <div className="mb-12 lg:mb-0">
@@ -201,12 +214,173 @@ const Home = () => {
               </div>
             </div>
           </div>
+
         </section>
 
+        <section class="mb-2 text-gray-800 bg-white px-10 py-5">
+          <h2 class="text-3xl font-bold mb-4 text-center">
+            Gallery
+          </h2>
 
-        {/* Upcoming Events */}
+          <div class="grid lg:grid-cols-3 gap-6">
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g9}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
 
-        <section className="bg-white py-8 text-gray-800 text-center overflow-scroll">
+            </div>
+
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g11}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+
+            </div>
+
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g4}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+
+            {/* <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{backgroundPosition: "50%"}} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g4}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{backgroundColor: "rgba(253, 253, 253, 0.15)"}}></div>
+                </div>
+              </a>
+            </div> */}
+
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g5}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g6}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g7}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g3}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g2}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+            <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+              style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="dark">
+              <img alt='...' src={g10}
+                class="w-full h-[200px] transition duration-300 ease-linear align-middle" />
+              <a href="#!">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
+                  <div class="flex justify-start items-end h-full">
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div
+                    class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                    style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className=" py-4 text-gray-800 text-center overflow-scroll">
           <h2 className="text-3xl font-bold  mb-5  text-[#232b2b]">Our Current Sponsors</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 px-6">

@@ -1,16 +1,26 @@
 import React from "react";
 import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 import { ImLinkedin } from "react-icons/im";
+import { MdEmail,MdLocationOn } from "react-icons/md";
+import {SiMinutemailer} from 'react-icons/si';
+import {HiLink} from 'react-icons/hi';
+
+
 import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 md:pb-5 pt-8 px-7 md:px-20 w-full">
+    <footer className="bg-slate-900 md:pb-3 pt-8 px-7 md:px-20 w-full">
       <div className="flex flex-col md:grid-cols-2 md:grid justify-between md:gap-[6em]">
         <div className="">
           {/* <h1 className="text-5xl text-slate-300 mb-1 self-start">PWH</h1> */}
 
-          <img src={logo} alt="..." width="15%" className="ml-[-20px] shadow-md" />
+          <img
+            src={logo}
+            alt="..."
+            width="15%"
+            className="ml-[-20px] shadow-md"
+          />
 
           <p className="text-white">
             The Priority for Women's Health (PWH) is committed to advancing
@@ -32,26 +42,40 @@ const Footer = () => {
             <ImLinkedin className="text-lg " size={"1.5em"} color="white" />
           </div>
         </div>
-        {/* <div className="mb-2">
-          <p className="text-sm text-slate-400 mb-2">Blog</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-        </div> */}
-        <div className="mb-2">
-          {/* <p className="text-sm text-slate-400 mb-2">News</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-          <p className="text-sm text-slate-400 mb-2">Lorem Ipsum</p>
-           */}
-           {' '}
+        <div className="md:mt-5 mb-2">
+          <div className="flex flex-row gap-3 mb-3">
+            <MdEmail className="text-white text-xl"/>
+            <p className=" text-white  mb-2">
+              info@priorityforwomanhealth.com
+            </p>
+          </div>
+          <div className="flex flex-row gap-3 mb-3">
+            <SiMinutemailer className="text-white text-xl"/>
+            <p className=" text-white  mb-2">
+            +(201)-528-5887
+            </p>
+          </div>
+          <div className="flex flex-row gap-3 mb-3">
+            <HiLink className="text-white text-xl"/>
+            <p className=" text-white  mb-2">
+              priorityforwomanhealth.com
+            </p>
+          </div>
+          <div className="flex flex-row gap-3 mb-3">
+            <MdLocationOn className="text-white text-xl"/>
+            <p className=" text-white  mb-2">
+              New York Office
+              777 United Nations Plaza, 7th Floor
+              New York, NY 10017
+            </p>
+          </div>
+         
         </div>
+      
       </div>
-      <p className="text-slate-400 text-center md:text-left">
+      {/* <p className="text-slate-400 text-center md:text-left">
         Copyright © FemiDEV
-      </p>
+      </p> */}
     </footer>
   );
 };

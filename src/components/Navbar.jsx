@@ -11,7 +11,7 @@ const Navbar = ({ toggleSidebar, setToggleSidebar }) => {
        */}
       <img src={logo} alt="..." className="w-[15%] md:w-[6.5%]" />
 
-      <div className="flex gap-2 mb-0 items-center hidden md:block">
+      <div className="flex gap-5 mb-0 items-center hidden md:flex justify-between">
         <NavLink
           to={`/`}
           className={({ isActive }) =>
@@ -23,10 +23,19 @@ const Navbar = ({ toggleSidebar, setToggleSidebar }) => {
         <NavLink
           to={`/about`}
           className={({ isActive }) =>
-            isActive ? "text-xl font-bold text-[#fbb771] mx-5" : "mx-5"
+            isActive ? "text-xl font-bold text-[#fbb771] " : ""
           }
         >
           About
+        </NavLink>
+
+        <NavLink
+          to={`/projects`}
+          className={({ isActive }) =>
+            isActive ? "text-xl font-bold text-[#fbb771]" : ""
+          }
+        >
+          Projects
         </NavLink>
 
         <NavLink

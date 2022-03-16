@@ -38,6 +38,17 @@ const Sidebar = ({ closeToggle }) => {
         </NavLink>
 
         <NavLink
+          to={`/projects`}
+          onClick={()=>{closeToggle(false)}}
+
+          className={({ isActive }) =>
+            isActive ? "text-xl font-bold text-[#fbb771] mb-5" : "text-[1.2em] text-white mb-5"
+          }
+        >
+          Projects
+        </NavLink>
+
+        <NavLink
           to={`/contact`}
           onClick={()=>{closeToggle(false)}}
 

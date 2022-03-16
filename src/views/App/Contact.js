@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
+
 
 const Contact = () => {
+    const contactName = useRef();
+    const contactEmail = useRef();
+    const contactMessage = useRef();
+
+    useEffect(() => {
+        console.log(window.Email);
+    }, [])
+
+    const sendMessage = async (e) => {
+        e.preventDefault();
+
+        const details = {
+            name: contactName.current.value,
+            email: contactEmail.current.value,
+            mesage: contactMessage.current.value
+        }
+        console.log(details);
+
+        // let response = await fetch("http://localhost:5000/contact", {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json;charset=utf-8",
+        //     },
+        //     body: JSON.stringify(details),
+        // });
+
+        // let result = await response.json();
+        // alert(result.status);
+    }
     return (
 
         <div className="mb-10 text-gray-800">
@@ -12,10 +42,10 @@ const Contact = () => {
             </div>
             <div className="container text-gray-800 px-4 md:px-12 z-50 pt-[1.3em] md:pt-0]">
                 <div className="block mt-7px md:mt-[-50px] rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6 z-10"
-                    style={{zIndex:999,  background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
+                    style={{ zIndex: 999, background: "hsla(0, 0%, 100%, 0.8)", backdropFilter: 'blur(30px)' }}>
                     <div className="flex flex-wrap">
                         <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
-                            <form>
+                            <form onSubmit={(e) => sendMessage(e)}>
                                 <div className="form-group mb-6">
                                     <input type="text" className="form-control block
                                         w-full
@@ -31,7 +61,10 @@ const Contact = () => {
                                         ease-in-out
                                         m-0
                                         focus:text-gray-700 focus:bg-white focus:border-white active:border-[none] focus:outline-none" id="exampleInput7"
-                                        placeholder="Name" />
+                                        placeholder="Name"
+                                        ref={contactName}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-group mb-6">
                                     <input type="email" className="form-control block
@@ -48,7 +81,10 @@ const Contact = () => {
                                     ease-in-out
                                     m-0
                                     focus:text-gray-700 focus:bg-white focus:border-white active:border-[none] focus:outline-none" id="exampleInput8"
-                                        placeholder="Email address" />
+                                        placeholder="Email address"
+                                        ref={contactEmail}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-group mb-6">
                                     <textarea className="
@@ -67,7 +103,10 @@ const Contact = () => {
             ease-in-out
             m-0
             focus:text-gray-700 focus:bg-white focus:border-white active:border-[none] focus:outline-none
-          " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+          " id="exampleFormControlTextarea13" rows="3" placeholder="Message"
+                                        required
+                                        ref={contactMessage}
+                                    ></textarea>
                                 </div>
 
                                 <button type="submit" className="
@@ -87,7 +126,9 @@ const Contact = () => {
           active:bg-blue-800 active:shadow-lg
           transition
           duration-150
-          ease-in-out">Send</button>
+          ease-in-out"
+
+                                >Send</button>
                             </form>
                         </div>
                         <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
@@ -96,13 +137,15 @@ const Contact = () => {
                                     <div className="flex items-start">
                                         <div className="shrink-0">
                                             <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                                                <svg class="w-8 h-8 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+                                                <svg className="w-8 h-8 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
 
                                             </div>
                                         </div>
                                         <div className="grow ml-6">
                                             <p className="font-bold mb-1">Location</p>
-                                            <p className="text-gray-500">Anywhere</p>
+                                            <p className="text-gray-500"> New York Office
+                                                777 United Nations Plaza, 7th Floor
+                                                New York, NY 10017</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,12 +153,14 @@ const Contact = () => {
                                     <div className="flex items-start">
                                         <div className="shrink-0">
                                             <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                                                <svg class="w-8 h-8 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
+                                                <svg className="w-8 h-8 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
                                             </div>
                                         </div>
                                         <div className="grow ml-6">
                                             <p className="font-bold mb-1">Phone</p>
-                                            <p className="text-gray-500">+2349130771719</p>
+                                            <p className="text-gray-500">+(201)-528-5887 <span className='italic'>text only</span></p>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -131,9 +176,9 @@ const Contact = () => {
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div className="grow ml-6">
+                                        <div className="grow ml-4">
                                             <p className="font-bold mb-1">Mail</p>
-                                            <p className="text-gray-500">PWH@gmail.org</p>
+                                            <p className="text-gray-500">info@priorityforwomanhealth.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -149,9 +194,9 @@ const Contact = () => {
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div className="grow ml-6">
+                                        <div className="grow ml-4">
                                             <p className="font-bold mb-1">Support</p>
-                                            <p className="text-gray-500">PWHSupport@gmail.com</p>
+                                            <p className="text-gray-500">info@priorityforwomanhealth.com</p>
                                         </div>
                                     </div>
                                 </div>
