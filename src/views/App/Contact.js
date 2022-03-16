@@ -1,10 +1,11 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 
 const Contact = () => {
     const contactName = useRef();
     const contactEmail = useRef();
     const contactMessage = useRef();
+    const [sending, setSending] = useState(false)
 
     useEffect(() => {
         console.log(window.Email);
@@ -16,20 +17,21 @@ const Contact = () => {
         const details = {
             name: contactName.current.value,
             email: contactEmail.current.value,
-            mesage: contactMessage.current.value
+            message: contactMessage.current.value
         }
-        console.log(details);
+        setSending(true);
+        let response = await fetch("https://api-service-nine.vercel.app/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
 
-        // let response = await fetch("http://localhost:5000/contact", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json;charset=utf-8",
-        //     },
-        //     body: JSON.stringify(details),
-        // });
-
-        // let result = await response.json();
-        // alert(result.status);
+        let result = await response.json();
+        setSending(false);
+console.log(result)
+        alert(result.status);
     }
     return (
 
@@ -109,7 +111,9 @@ const Contact = () => {
                                     ></textarea>
                                 </div>
 
-                                <button type="submit" className="
+                                <button type="submit" 
+                                disabled={sending}
+                                className="
           w-full
           px-6
           py-2.5
@@ -128,7 +132,7 @@ const Contact = () => {
           duration-150
           ease-in-out"
 
-                                >Send</button>
+                                >{sending ? '...sending' : "SEND"}</button>
                             </form>
                         </div>
                         <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
