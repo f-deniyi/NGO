@@ -186,7 +186,7 @@ const Home = () => {
 
         <section className=" text-gray-800  bg-[#f2f2f2] overflow-hidden py-8 pb-10" >
           <h3 className='text-3xl text-center font-bold pb-5'>Projects</h3>
-          <div className="px-6  md:px-12 text-center lg:text-left">
+          <div className="px-6  md:px-12 text-left">
             <div className="container mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 flex ">
                 <div className="lg:mt-0">
