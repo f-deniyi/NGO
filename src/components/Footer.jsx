@@ -45,9 +45,9 @@ const Footer = () => {
         <div className="md:mt-5 mb-2">
           <div className="flex flex-row gap-3 mb-3">
             <MdEmail className="text-white text-xl"/>
-            <p className=" text-white  mb-2">
-              info@priorityforwomanhealth.com
-            </p>
+            <a className=" text-white  mb-2" href="mailto:jessicabonay@priorityforwomenhealth.info">
+            jessicabonay@priorityforwomenhealth.info
+            </a>
           </div>
           <div className="flex flex-row gap-3 mb-3">
             <SiMinutemailer className="text-white text-xl"/>
@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="flex flex-row gap-3 mb-3">
             <HiLink className="text-white text-xl"/>
             <p className=" text-white  mb-2">
-              priorityforwomanhealth.com
+              priorityforwomenhealth.info
             </p>
           </div>
           <div className="flex flex-row gap-3 mb-3">

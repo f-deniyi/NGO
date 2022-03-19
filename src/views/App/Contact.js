@@ -15,6 +15,7 @@ const Contact = () => {
         e.preventDefault();
 
         const details = {
+            to: 'jessicabonay@priorityforwomenhealth.info',
             name: contactName.current.value,
             email: contactEmail.current.value,
             message: contactMessage.current.value
@@ -30,7 +31,7 @@ const Contact = () => {
 
         let result = await response.json();
         setSending(false);
-console.log(result)
+        console.log(result)
         alert(result.status);
     }
     return (
@@ -111,9 +112,9 @@ console.log(result)
                                     ></textarea>
                                 </div>
 
-                                <button type="submit" 
-                                disabled={sending}
-                                className="
+                                <button type="submit"
+                                    disabled={sending}
+                                    className="
           w-full
           px-6
           py-2.5
@@ -168,8 +169,9 @@ console.log(result)
                                         </div>
                                     </div>
                                 </div>
-                                <div className="mb-12 md:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
-                                    <div className="flex align-start">
+                                
+                                <div className="mb-12 md:mb-0 grow-0 shrink-0 basis-auto  md:w-6/12 px-3 lg:px-6">
+                                    <div className="flex ">
                                         <div className="shrink-0">
                                             <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="email"
@@ -180,9 +182,11 @@ console.log(result)
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div className="grow ml-4">
+                                        <div className="ml-4 md:w-[80%]">
                                             <p className="font-bold mb-1">Mail</p>
-                                            <p className="text-gray-500">info@priorityforwomanhealth.com</p>
+                                            <a className="text-gray-500 break-words" href="mailto:jessicabonay@priorityforwomenhealth.info">
+                                                jessicabonay@priorityforwomenhealth.info
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -198,9 +202,11 @@ console.log(result)
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div className="grow ml-4">
+                                        <div className="grow ml-4 md:w-[80%]">
                                             <p className="font-bold mb-1">Support</p>
-                                            <p className="text-gray-500">info@priorityforwomanhealth.com</p>
+                                            <a className="text-gray-500 break-words" href="mailto:jessicabonay@priorityforwomenhealth.info">
+                                                jessicabonay@priorityforwomenhealth.info
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
