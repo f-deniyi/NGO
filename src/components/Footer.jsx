@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="flex flex-row gap-3 mb-3">
             <SiMinutemailer className="text-white text-xl"/>
             <p className=" text-white  mb-2">
-            +(914)-575-2478
+            +(918)-410-9138
             </p>
           </div>
           <div className="flex flex-row gap-3 mb-3">
